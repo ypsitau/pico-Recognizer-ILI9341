@@ -40,6 +40,8 @@ GPIO0 and GPIO1 are used to select the TFLite model to recognize characters. Eac
 
 ## Installation
 
+In order to install the pre-built binary file to your Pico board, follow these steps:
+
 1. Press and hold the BOOTSEL button on your Pico board while connecting it to your computer via USB. Release the BOOTSEL button after connecting.
 2. Your Pico board should appear as a removable drive such as `D:`. Copy one of the following UF2 files to the drive:
 
@@ -49,6 +51,8 @@ GPIO0 and GPIO1 are used to select the TFLite model to recognize characters. Eac
    |Pico 2 |[pico2-Recognizer-ILI9341.uf2](https://github.com/ypsitau/pico-Recognizer-ILI9341/releases/latest/download/pico2-Recognizer-ILI9341.uf2)  |
 
 ## Building
+
+When you want to build the project from source code, follow these steps:
 
 1. Execute the following commands in your terminal:
 
