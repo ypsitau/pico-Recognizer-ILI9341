@@ -5,5 +5,5 @@ cmake -S . -B build-pico2 -G "Ninja" -DCMAKE_BUILD_TYPE=Release -DPICO_BOARD=pic
 cmake --build build-pico --config Release --parallel
 cmake --build build-pico2 --config Release --parallel
 #echo "------------------------------------------------------"
-copy build-pico/pico-Recognizer-ILI9341.uf2 release/pico-Recognizer-ILI9341-pico.uf2
-copy build-pico2/pico-Recognizer-ILI9341.uf2 release/pico-Recognizer-ILI9341-pico2.uf2
+copy build-pico/pico-Recognizer-ILI9341.uf2 release/pico-Recognizer-ILI9341.uf2
+copy build-pico2/pico-Recognizer-ILI9341.uf2 release/pico2-Recognizer-ILI9341.uf2
