@@ -4,12 +4,16 @@ Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341
 
 ## Requirements
 
+Following components are required to build this project:
+
 - Raspberry Pi Pico or Pico W or Pico 2 or Pico 2 W
 - ILI9341 display module
 - Breadboard and jumper wires
 - Micro USB cable
 
 ## Wiring
+
+Connect the Raspberry Pi Pico to the ILI9341 display as follows:
 
 | Raspberry Pi Pico | ILI9341 Display |
 |-------------------|-----------------|
