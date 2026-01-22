@@ -28,40 +28,40 @@ set(PICO_BOARD pico2 CACHE STRING "Board type")
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
-project(Recognizer-ILI9341 C CXX ASM)
+project(pico-Recognizer-ILI9341 C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Recognizer-ILI9341 Recognizer-ILI9341.cpp )
+add_executable(pico-Recognizer-ILI9341 pico-Recognizer-ILI9341.cpp )
 
-pico_set_program_name(Recognizer-ILI9341 "Recognizer-ILI9341")
-pico_set_program_version(Recognizer-ILI9341 "0.1")
+pico_set_program_name(pico-Recognizer-ILI9341 "pico-Recognizer-ILI9341")
+pico_set_program_version(pico-Recognizer-ILI9341 "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(Recognizer-ILI9341 0)
-pico_enable_stdio_usb(Recognizer-ILI9341 0)
+pico_enable_stdio_uart(pico-Recognizer-ILI9341 0)
+pico_enable_stdio_usb(pico-Recognizer-ILI9341 0)
 
 # Add the standard library to the build
-target_link_libraries(Recognizer-ILI9341
+target_link_libraries(pico-Recognizer-ILI9341
 	pico_stdlib
 	jxglib_LABOPlatform_FullCmd
 	jxglib_Display_ILI9341
 	jxglib_ML)
 
 # Add the standard include files to the build
-target_include_directories(Recognizer-ILI9341 PRIVATE
+target_include_directories(pico-Recognizer-ILI9341 PRIVATE
 	${CMAKE_CURRENT_LIST_DIR}
 )
 
-target_compile_definitions(Recognizer-ILI9341 PUBLIC
+target_compile_definitions(pico-Recognizer-ILI9341 PUBLIC
 	# assume flash operations are safe on core 0
 	PICO_FLASH_ASSERT_ON_UNSAFE=0
 )
 
-pico_add_extra_outputs(Recognizer-ILI9341)
+pico_add_extra_outputs(pico-Recognizer-ILI9341)
 
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/pico-jxglib)
-jxglib_configure_LABOPlatform(Recognizer-ILI9341)
+jxglib_configure_LABOPlatform(pico-Recognizer-ILI9341)
