@@ -36,6 +36,14 @@ GPIO0 and GPIO1 are used to select the recognition model.
 
 ## Installation
 
+1. Press and hold the BOOTSEL button on your Pico board while connecting it to your computer via USB. Release the BOOTSEL button after connecting.
+2. Your Pico board should appear as a removable drive such as `D:`. Copy one of the following UF2 files to the drive:
+
+   |Pico Board|UF2 File|
+   |-----------|------------|
+   |Pico |[pico-Recognizer-ILI9341.uf2](https://github.com/ypsitau/pico-Recognizer-ILI9341/releases/latest/download/pico-Recognizer-ILI9341.uf2)            |
+   |Pico 2 |[pico2-Recognizer-ILI9341.uf2](https://github.com/ypsitau/pico-Recognizer-ILI9341/releases/latest/download/pico2-Recognizer-ILI9341.uf2)  |
+
 ## Building
 
 1. Execute the following commands in your terminal:
