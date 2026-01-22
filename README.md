@@ -29,10 +29,10 @@ GPIO0 and GPIO1 are used to select the recognition model.
 
 |GPIO1|GPIO0|Training Dataset |Recognizable Characters|
 |-----|-----|-----------------|-----------------------|
-| NC  | NC  | EMNIST Balanced |0-9, A-Z, a-z          |
+| NC  | NC  | EMNIST Balanced |0-9, A-Z, a, b, d, e, f, g, h, n, q, r, t |
 | NC  | GND | EMNIST MNIST    |0-9                    |
 | GND | NC  | EMNIST Letters  |A-Z                    |
-| GND |GND  | EMNIST ByMerge  |0-9, A-Z, a-z          |
+| GND |GND  | EMNIST ByMerge  |0-9, A-Z, a, b, d, e, f, g, h, n, q, r, t |
 
 ## Installation
 
