@@ -25,7 +25,7 @@ Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341
 | GPIO14 (SPI1 SCK) | SCK             |
 | GPIO15 (SPI1 TX)  | SDI (MOSI)      |
 
-GPIO0 and GPIO1 are sed to select the recognition model.
+GPIO0 and GPIO1 are used to select the recognition model.
 
 |GPIO1|GPIO0|Training Dataset |Recognizable Characters|
 |-----|-----|-----------------|-----------------------|
