@@ -62,4 +62,6 @@ GPIO0 and GPIO1 are used to select the TFLite model to recognize characters. Eac
 
 ## Demonstration
 
+(sorry, this is just for testing the embedding feature)
+
 [![Demonstration](https://img.youtube.com/vi/oYj4OYiUWKs/0.jpg)](https://youtube.com/shorts/oYj4OYiUWKs)
