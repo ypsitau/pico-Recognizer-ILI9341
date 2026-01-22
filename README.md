@@ -38,16 +38,15 @@ GPIO0 and GPIO1 are sed to select the recognition model.
 
 ## Building
 
-Execute the following commands in your terminal:
+1. Execute the following commands in your terminal:
 
-```
-$ git clone https://github.com/ypsitau/pico-Recognizer-ILI9341.git
-$ cd pico-Recognizer-ILI9341
-$ git submodule update --init --recursive
-```
+   ```
+   $ git clone https://github.com/ypsitau/pico-Recognizer-ILI9341.git
+   $ cd pico-Recognizer-ILI9341
+   $ git submodule update --init --recursive
+   ```
 
-Open Visual Studio Code in the project folder by executing `code .` in your terminal.
-Then press `F7` to build the project and get the binary file `pico-Recognizer-ILI9341.uf2` in the `build` folder.
+2. Open Visual Studio Code in the project folder by executing `code .` in your terminal. Then press `F7` to build the project and get the binary file `pico-Recognizer-ILI9341.uf2` in the `build` folder.
 
 ## Demonstration
 
