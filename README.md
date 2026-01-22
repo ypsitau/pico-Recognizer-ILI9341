@@ -1,6 +1,6 @@
 # pico-Recognizer-ILI9341
 
-Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341 display.
+Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341 display. A demonstration application of machine learning on microcontrollers using [pico-jxglib](https://github.com/ypsitau/pico-jxglib) library.
 
 ## Requirements
 
@@ -48,3 +48,7 @@ $ git submodule update --init --recursive
 
 Open Visual Studio Code in the project folder by executing `code .` in your terminal.
 Then press `F7` to build the project and get the binary file `pico-Recognizer-ILI9341.uf2` in the `build` folder.
+
+## Demonstration
+
+[![Demonstration](https://img.youtube.com/vi/oYj4OYiUWKs/0.jpg)](https://youtube.com/shorts/oYj4OYiUWKs)
