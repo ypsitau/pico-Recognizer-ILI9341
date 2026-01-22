@@ -25,7 +25,7 @@ Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341
 | GPIO14 (SPI1 SCK) | SCK             |
 | GPIO15 (SPI1 TX)  | SDI (MOSI)      |
 
-GPIO0 and GPIO1 are used to select the recognition model.
+GPIO0 and GPIO1 are used to select the TFLite model to recognize characters. Each model is trained on a different subset of the EMNIST dataset. Connect GPIO0 and GPIO1 to either GND or leave them unconnected (NC) to select the desired model as shown below:
 
 |GPIO1|GPIO0|Training Dataset |Recognizable Characters|
 |-----|-----|-----------------|-----------------------|
