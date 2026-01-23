@@ -66,6 +66,4 @@ When you want to build the project from source code, follow these steps:
 
 ## Demonstration
 
-(sorry, this is just for testing the embedding feature)
-
-[![Demonstration](https://img.youtube.com/vi/oYj4OYiUWKs/0.jpg)](https://youtube.com/shorts/oYj4OYiUWKs)
+[![Demonstration](https://img.youtube.com/vi/p4s3oFeSuCg/0.jpg)](https://youtu.be/p4s3oFeSuCg)
