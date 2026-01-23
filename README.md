@@ -4,6 +4,8 @@ Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341
 
 ## Demonstration
 
+View the demonstration video on YouTube:
+
 [![Demonstration](https://img.youtube.com/vi/p4s3oFeSuCg/0.jpg)](https://youtu.be/p4s3oFeSuCg)
 
 ## Requirements
