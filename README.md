@@ -35,6 +35,8 @@ Connect the Raspberry Pi Pico to the ILI9341 display as follows:
 | GPIO14 (SPI1 SCK) | SCK             |
 | GPIO15 (SPI1 TX)  | SDI (MOSI)      |
 
+![circuit.png](https://raw.githubusercontent.com/ypsitau/zenn/main/images/2026-02-02-recognizer/circuit.png)
+
 GPIO0 and GPIO1 are used to select the TFLite model to recognize characters. Each model is trained on a different subset of the EMNIST dataset. Connect GPIO0 and GPIO1 to either GND or leave them unconnected (NC) to select the desired model as shown below:
 
 |GPIO1|GPIO0|Training Dataset |Recognizable Characters|
