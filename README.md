@@ -1,6 +1,6 @@
 # pico-Recognizer-ILI9341
 
-Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341 display. A demonstration application of machine learning on microcontrollers using [pico-jxglib](https://github.com/ypsitau/pico-jxglib) library.
+Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341 display. A demonstration of [pico-jxglib](https://github.com/ypsitau/pico-jxglib) library that uses TensorFlow Lite for Microcontrollers.
 
 ## Demonstration
 
