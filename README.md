@@ -25,7 +25,7 @@ Connect the Raspberry Pi Pico to the ILI9341 display as follows:
 |-------------------|-----------------|
 | GPIO2 (SPI0 SCK)  | T_CLK           |
 | GPIO3 (SPI0 TX)   | T_DIN           |
-| GPIO4 (SPI0 RX)   | T_DOUT          |
+| GPIO4 (SPI0 RX)   | T_DO            |
 | GPIO8             | T_CS            |
 | GPIO9             | T_IRQ           |
 | GPIO10            | RESET           |
