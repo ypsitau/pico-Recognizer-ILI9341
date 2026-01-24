@@ -2,6 +2,8 @@
 
 Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341 display. A demonstration of [pico-jxglib](https://github.com/ypsitau/pico-jxglib) library that uses TensorFlow Lite for Microcontrollers.
 
+This can recognize not only digits (0-9) but also uppercase letters (A-Z) and some lowercase letters (a, b, d, e, f, g, h, n, q, r, t) depending on the selected model.
+
 ## Demonstration
 
 View the demonstration video on YouTube:
@@ -55,8 +57,8 @@ In order to install the pre-built binary file to your Pico board, follow these s
 
    |Pico Board|UF2 File|
    |-----------|------------|
-   |Pico |[pico-Recognizer-ILI9341.uf2](https://github.com/ypsitau/pico-Recognizer-ILI9341/releases/latest/download/pico-Recognizer-ILI9341.uf2)            |
-   |Pico 2 |[pico2-Recognizer-ILI9341.uf2](https://github.com/ypsitau/pico-Recognizer-ILI9341/releases/latest/download/pico2-Recognizer-ILI9341.uf2)  |
+   |Pico / Pico W|[pico-Recognizer-ILI9341.uf2](https://github.com/ypsitau/pico-Recognizer-ILI9341/releases/latest/download/pico-Recognizer-ILI9341.uf2)            |
+   |Pico 2 / Pico 2 W|[pico2-Recognizer-ILI9341.uf2](https://github.com/ypsitau/pico-Recognizer-ILI9341/releases/latest/download/pico2-Recognizer-ILI9341.uf2)  |
 
 ## Building
 
