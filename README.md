@@ -73,3 +73,10 @@ When you want to build the project from source code, follow these steps:
    ```
 
 2. Open Visual Studio Code in the project folder by executing `code .` in your terminal. Then press `F7` to build the project and get the binary file `pico-Recognizer-ILI9341.uf2` in the `build` folder.
+
+## Training and Embedding TFLite Models
+
+
+
+Click [https://colab.research.google.com/github/ypsitau/pico-Recognizer-ILI9341/blob/main/pico-Recognizer-ILI9341.ipynb](here) to open the Jupyter Notebook on Google Colab that shows how to train the TFLite models used in this project.
+
