@@ -38,7 +38,7 @@ pico_sdk_init()
 add_executable(pico-Recognizer-ILI9341 pico-Recognizer-ILI9341.cpp )
 
 pico_set_program_name(pico-Recognizer-ILI9341 "pico-Recognizer-ILI9341")
-pico_set_program_version(pico-Recognizer-ILI9341 "0.1")
+pico_set_program_version(pico-Recognizer-ILI9341 "0.1.1")
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(pico-Recognizer-ILI9341 0)
