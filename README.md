@@ -83,7 +83,7 @@ Click [here](https://colab.research.google.com/github/ypsitau/pico-Recognizer-IL
 - `Recognizer-emnist-balanced-binary.tflite`
 - `Recognizer-emnist-bymerge-binary.tflite`
 
-Using `EmbedTfLiteModel` macro defined in **pico-jxglib**`, you can embed the generated model files into your Pico application without needing to convert them to C arrays manually. Simply include the following lines in your source code:
+Using `EmbedTfLiteModel` macro defined in **pico-jxglib**, you can embed the generated model files into your Pico application without needing to convert them to C arrays manually. Simply include the following lines in your source code:
 
 ```cpp
 EmbedTfLiteModel("Recognizer-emnist-mnist-binary.tflite", modelData_emnist_mnist, modelDataSize_emnist_mnist);
