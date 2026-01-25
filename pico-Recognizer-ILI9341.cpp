@@ -8,7 +8,6 @@
 #include "jxglib/Display/ILI9341.h"
 #include "jxglib/Font/shinonome14.h"
 #include "jxglib/ML/TfLiteModelRunner.h"
-#include "jxglib/LABOPlatform.h"
 
 using namespace jxglib;
 
@@ -39,7 +38,7 @@ static const Config configTbl[] = {
 		"K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
 		"U", "V", "W", "X", "Y", "Z",
 	}, },
-	{ modelData_emnist_bymerge, "Draw one of 0-9, A-Z, and a-z", {
+	{ modelData_emnist_balanced, "Draw one of 0-9, A-Z, and a-z", {
 		"0 (number)", "1", "2", "3", "4", "5", "6", "7", "8", "9",
 		"A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
 		"K", "L", "M", "N", "O (alphabet)", "P", "Q", "R", "S", "T",
@@ -53,7 +52,6 @@ static ML::TfLiteModelRunner<16500, 8> modelRunner;
 int main()
 {
 	::stdio_init_all();
-	LABOPlatform::Instance.Initialize();
 	::spi_init(spi0, 2 * 1000 * 1000);
 	::spi_init(spi1, 125'000'000);
 	GPIO0.set_function_SIO().set_dir_IN().pull_up();
