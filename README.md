@@ -4,6 +4,8 @@ Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341
 
 This can recognize not only digits (0-9) but also uppercase letters (A-Z) and some lowercase letters (a, b, d, e, f, g, h, n, q, r, t) depending on the selected model.
 
+**If you find this useful, please give it a star! ⭐️**
+
 ## Demonstration
 
 View the demonstration video on YouTube:
