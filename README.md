@@ -8,7 +8,7 @@ This can recognize not only digits (0-9) but also uppercase letters (A-Z) and so
 
 View the demonstration video on YouTube:
 
-[![Demonstration](https://img.youtube.com/vi/p4s3oFeSuCg/0.jpg)](https://youtu.be/p4s3oFeSuCg)
+[![Demonstration](https://img.youtube.com/vi/Vg-L-No7t5Q/0.jpg)](https://youtu.be/Vg-L-No7t5Q)
 
 ## Requirements
 
