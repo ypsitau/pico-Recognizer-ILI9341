@@ -8,14 +8,13 @@
 #include "jxglib/Display/ILI9341.h"
 #include "jxglib/Font/shinonome14.h"
 #include "jxglib/ML/TfLiteModelRunner.h"
-#include "jxglib/LABOPlatform.h"
 
 using namespace jxglib;
 
-EmbedTfLiteModel("jxglib/ML/Model/Recognizer-EMNIST-balanced-binary.tflite", modelData_balanced, modelDataSize_balanced);
-EmbedTfLiteModel("jxglib/ML/Model/Recognizer-EMNIST-mnist-binary.tflite", modelData_mnist, modelDataSize_mnist);
-EmbedTfLiteModel("jxglib/ML/Model/Recognizer-EMNIST-letters-binary.tflite", modelData_letters, modelDataSize_letters);
-EmbedTfLiteModel("jxglib/ML/Model/Recognizer-EMNIST-bymerge-binary.tflite", modelData_bymerge, modelDataSize_bymerge);
+EmbedTfLiteModel("Recognizer-emnist-balanced-binary.tflite", modelData_emnist_balanced, modelDataSize_emnist_balanced);
+EmbedTfLiteModel("Recognizer-emnist-mnist-binary.tflite", modelData_emnist_mnist, modelDataSize_emnist_mnist);
+EmbedTfLiteModel("Recognizer-emnist-letters-binary.tflite", modelData_emnist_letters, modelDataSize_emnist_letters);
+EmbedTfLiteModel("Recognizer-emnist-bymerge-binary.tflite", modelData_emnist_bymerge, modelDataSize_emnist_bymerge);
 
 struct Config {
 	const void* modelData;
@@ -24,22 +23,22 @@ struct Config {
 };
 
 static const Config configTbl[] = {
-	{ modelData_balanced, "Draw one of 0-9, A-Z, and a-z", {
+	{ modelData_emnist_balanced, "Draw one of 0-9, A-Z, and a-z", {
 		"0 (number)", "1", "2", "3", "4", "5", "6", "7", "8", "9",
 		"A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
 		"K", "L", "M", "N", "O (alphabet)", "P", "Q", "R", "S", "T",
 		"U", "V", "W", "X", "Y", "Z",
 		"a", "b", "d", "e", "f", "g", "h", "n", "q", "r", "t",
 	}, },
-	{ modelData_mnist, "Draw one of 0-9", {
+	{ modelData_emnist_mnist, "Draw one of 0-9", {
 		"0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
 	}, },
-	{ modelData_letters, "Draw one of A-Z", {
+	{ modelData_emnist_letters, "Draw one of A-Z", {
 		"A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
 		"K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
 		"U", "V", "W", "X", "Y", "Z",
 	}, },
-	{ modelData_bymerge, "Draw one of 0-9, A-Z, and a-z", {
+	{ modelData_emnist_balanced, "Draw one of 0-9, A-Z, and a-z", {
 		"0 (number)", "1", "2", "3", "4", "5", "6", "7", "8", "9",
 		"A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
 		"K", "L", "M", "N", "O (alphabet)", "P", "Q", "R", "S", "T",
@@ -53,7 +52,6 @@ static ML::TfLiteModelRunner<16500, 8> modelRunner;
 int main()
 {
 	::stdio_init_all();
-	LABOPlatform::Instance.Initialize();
 	::spi_init(spi0, 2 * 1000 * 1000);
 	::spi_init(spi1, 125'000'000);
 	GPIO0.set_function_SIO().set_dir_IN().pull_up();

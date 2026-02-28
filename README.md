@@ -4,6 +4,8 @@ Character recognizer based on EMNIST dataset using Raspberry Pi Pico and ILI9341
 
 This can recognize not only digits (0-9) but also uppercase letters (A-Z) and some lowercase letters (a, b, d, e, f, g, h, n, q, r, t) depending on the selected model.
 
+**If you find this useful, please give it a star! ⭐️**
+
 ## Demonstration
 
 View the demonstration video on YouTube:
@@ -73,3 +75,23 @@ When you want to build the project from source code, follow these steps:
    ```
 
 2. Open Visual Studio Code in the project folder by executing `code .` in your terminal. Then press `F7` to build the project and get the binary file `pico-Recognizer-ILI9341.uf2` in the `build` folder.
+
+## Training and Embedding TensorFlow Lite Models
+
+Click [here](https://colab.research.google.com/github/ypsitau/pico-Recognizer-ILI9341/blob/main/pico-Recognizer-ILI9341.ipynb) to open the Jupyter Notebook on Google Colab that shows how to train the TensorFlow Lite models used in this project. A script in the notebook generates and downloads the following tflite files:
+
+- `Recognizer-emnist-mnist-binary.tflite`
+- `Recognizer-emnist-letters-binary.tflite`
+- `Recognizer-emnist-balanced-binary.tflite`
+- `Recognizer-emnist-bymerge-binary.tflite`
+
+Using `EmbedTfLiteModel` macro defined in **pico-jxglib**, you can embed the generated model files into your Pico application without needing to convert them to C arrays manually. Simply include the following lines in your source code:
+
+```cpp
+EmbedTfLiteModel("Recognizer-emnist-mnist-binary.tflite", modelData_emnist_mnist, modelDataSize_emnist_mnist);
+EmbedTfLiteModel("Recognizer-emnist-letters-binary.tflite", modelData_emnist_letters, modelDataSize_emnist_letters);
+EmbedTfLiteModel("Recognizer-emnist-balanced-binary.tflite", modelData_emnist_balanced, modelDataSize_emnist_balanced);
+EmbedTfLiteModel("Recognizer-emnist-bymerge-binary.tflite", modelData_emnist_bymerge, modelDataSize_emnist_bymerge);
+```
+
+See the source code in `pico-Recognizer-ILI9341.cpp` for an example of how to use the embedded models.
